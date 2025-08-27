@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品資訊</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        main {
+            padding-top: 50px;
+        }
+
+        .bg-primary {
+            background-color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+    <main class="flex-shrink-0">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">3D家具展示</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- start / left / 左 -->
+                        <!-- end / right / 右 -->
+                        <!-- m-auto margin:auto 左右自動調整 -->
+                        <!-- ms-auto margin:left:auto 左右自動調整 -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./store.html">門市資訊</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    產品分類
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./product-list.html">櫃子</a></li>
+                                    <li><a class="dropdown-item" href="./product-list.html">椅子</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">常見問題</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">關於我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <button type="button" class="btn btn-info p-1 position-relative" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <button type="button" class="btn btn-info p-1 position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="#offcanvasExample">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
+                                        class="visually-hidden">unread messages</span></span>
+                            </button>
+
+                        </div>
+                        <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 內容 start -->
+        <!-- form#loginForm -->
+        <!-- 1. require 必填 -->
+        <!-- 2. novalidate 移除HTML5驗證 -->
+        <!-- 3. needs-validation 驗證區塊的class名稱 -->
+        <!-- 4. 加掛驗證js(建議獨立一個js檔案) -->
+        <!-- bs5-form-submit -->
+        <!-- p.text-end -->
+        <nav aria-label="breadcrumb" class="p-2 shadow-sm">
+            <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">產品</li>
+            </ol>
+        </nav>
+
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            The current link item
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                        <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+    <!-- 1.容器>2.列>3.欄>4.超連結[href]>5.圖片 -->
+    <!-- .container.text-center>.row>.col-3.mb-4*15>a[href="./product.html"]>img.w-100[src="./images/product-$$.jpg"]+span{商品$$} -->
+    <!-- 加陰影 -->
+    <!-- .container.text-center>.row>.col-3.mb-4*15>.shadow.p-2>a[href="./product.html"]>img.w-100[src="./images/product-$$.jpg"]+span{商品$$} -->
+    <!-- .container.text-center>.row>.col-12.col-md-6.col-xl-3.mb-4*15>.shadow.p-2>a[href="./product.html"]>img.w-100[src="./images/product-$$.jpg"]+span{商品$$} -->
+    <div class="container text-center">
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2">
+                    <a href="./product.html">
+                        <div class="position-relative">
+                            <img src="./img/櫃子3.webp" alt="" class="w-100">
+                            <div class="position-absolute top-0 start-0 bg-primary p-3 text-white">NEW</div>
+                            <!-- <div class="position-absolute bottom-0 start-0 bg-secondary p-3 text-white">HOT</div> -->
+                            <div class="position-absolute top-0 end-0 bg-warning p-3 text-white"><i
+                                    class="fa-regular fa-heart"></i></div>
+                        </div>
+                        <span>商品01</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./img/櫃子1.webp" alt=""
+                            class="w-100"><span>商品02</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-03.jpg" alt=""
+                            class="w-100"><span>商品03</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-04.jpg" alt=""
+                            class="w-100"><span>商品04</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-05.jpg" alt=""
+                            class="w-100"><span>商品05</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-06.jpg" alt=""
+                            class="w-100"><span>商品06</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-07.jpg" alt=""
+                            class="w-100"><span>商品07</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-08.jpg" alt=""
+                            class="w-100"><span>商品08</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-09.jpg" alt=""
+                            class="w-100"><span>商品09</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-10.jpg" alt=""
+                            class="w-100"><span>商品10</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-11.jpg" alt=""
+                            class="w-100"><span>商品11</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-12.jpg" alt=""
+                            class="w-100"><span>商品12</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-13.jpg" alt=""
+                            class="w-100"><span>商品13</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-14.jpg" alt=""
+                            class="w-100"><span>商品14</span></a></div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="shadow p-2"><a href="./product.html"><img src="./images/product-15.jpg" alt=""
+                            class="w-100"><span>商品15</span></a></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto bg-primary py-5 text-dark text-center">
+        <!-- .container>.row>.col-md-4*3{$} -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-end order-md-3">
+                    <!-- a.btn.btn-outline-light{家具專區} -->
+                    <!-- a.btn.btn-outline-light{優惠券} -->
+                    <a href="" class="btn btn-outline-light">家具專區</a>
+                    <a href="" class="btn btn-outline-light">優惠券</a>
+                    <p class="fs-3">
+                        <span class="me-2 d-none d-md-inline">FOLLOW US</span>
+                        <a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-line"></i></a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 order-md-2 d-none d-md-block">生活家居</div>
+                <div class="col-md-4 text-md-start order-md-1">
+                    <p>隨時歡迎你加入！我們不定期提供卡友優惠價格、生日優惠及各類驚喜贈品！</p>
+                    <p>免費加入企業卡卡友，即享專屬優惠。</p>
+                    <p>
+                        <a href="" class="text-dark text-decoration-none">隱私權政策</a>
+                        <a href="" class="text-dark text-decoration-none">聯絡我們</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="accout" class="form-label">帳號</label>
+                            <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                                placeholder="請輸入電子郵件" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="請輸入密碼" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+
+                        <p class="text-end">
+                            <button type="submit" class="btn btn-primary">
+                                登入
+                            </button>
+                        </p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="class mb-4">
+                您的購物車是空的
+            </div>
+            <div class="row">
+                <div class="col-6"><a href="" class="btn btn-primary w-100">立即結帳</a></div>
+                <div class="col-6"><a href="" class="btn btn-primary w-100">前往選購</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- fixed-top 工具>posotion定位 指定上邊 -->
+
+    <!-- .position-fixed / position:fixed 固定定位 -->
+    <!-- .top-0     top:0     上 -->
+    <!-- .end-0     right:0   右 -->
+    <!-- .bottom-0  bottom:0  下 -->
+    <!-- .start-0   left:0    左 -->
+    <!-- a[href="#"].position-fixed.end-0.bottom-0{TOP} -->
+
+    <a href="#" class="position-fixed end-0 bottom-0 m-5 bg-dark p-3 text-decoration-none text-white">TOP</a>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>

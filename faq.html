@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        main {
+            padding-top: 50px;
+        }
+
+        .bg-primary {
+            background-color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+    <main class="flex-shrink-0">
+        <!-- 內容 start -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">3D家具展示</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- start / left / 左 -->
+                        <!-- end / right / 右 -->
+                        <!-- m-auto margin:auto 左右自動調整 -->
+                        <!-- ms-auto margin:left:auto 左右自動調整 -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./store.html">門市資訊</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    產品分類
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./product-list.html">櫃子</a></li>
+                                    <li><a class="dropdown-item" href="./product-list.html">椅子</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">常見問題</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">關於我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="#offcanvasExample">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+
+                        </div>
+                        <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <nav aria-label="breadcrumb" class="p-2 shadow-sm">
+            <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item"><a href="./_blank.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">常見問題</li>
+            </ol>
+        </nav>
+
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    寄件問題
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="qa-list">
+                                        <li>
+                                            <div>
+                                                <p class="qa_tit">寄件通路</p>
+                                                <p>可至黑貓寄取站、連鎖代收店（7-ELEVEN、OK超商）、插有黑貓宅急便包裹代收店旗子的商店寄件，也可直接打電話到客服專線：412-8888（手機直撥請加02）或網路客服聯絡我們到府收件。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">受理包裹尺寸的計算及範圍</p>
+                                                <p>尺寸計算方式為長+寬+高之總和，受理的物品尺寸範圍：一般包裹須在150公分以內，低溫物品須在120公分以內，重量則須在20公斤以下。相關說明請參考運費說明和不受理品項頁面說明。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">包裹價值上限</p>
+                                                <p>包裹價值一律以2萬元為受理貨物之價值上限，相關說明請參考託運條款頁面說明。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">我可以寄電腦主機/螢幕/印表機嗎？</p>
+                                                <p>只要您的物品經過妥善的包裝，包裝之後每一件的尺寸(長+寬+高的三邊合計)在150公分以內、重量不超過20公斤可為您配送。因電腦類的物品屬精密儀器，寄件前請務必將電腦完整牢固的包裝好，對物品的保護更週全!
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">我可以寄送鮮奶油蛋糕嗎？</p>
+                                                <p>由於我們是利用車輛進行轉運與配送，蛋糕類型的物品，尤其是奶油類及造型蛋糕，本身的素材與外盒包裝並不太適合車輛長途運送，相當容易因路面顛簸引起的搖晃而有外觀受損之虞，寄件人的物品與心意也可能因此而大打折扣，目前不接受鮮奶油類型的蛋糕及造型蛋糕。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">我可以寄到郵政信箱嗎？</p>
+                                                <p>很抱歉，因包裹寄往郵政信箱將無法由收件人簽收，請恕無法受理；此外如軍營、軍校等地址亦請恕無法受理託運。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">若運送過程中包裹有遺失或損壞，是否有相關賠償辦法？</p>
+                                                <p>本公司有關於運送物品遺失或損壞的相關規定與賠償條款，請參閱託運單背面或官網載明之「統一速達<a
+                                                        href="/send/clause.aspx">託運條款</a>」</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">如何節省手寫託運單的時間？</p>
+                                                <p>歡迎使用icat網路宅急便服務，可上填寫自行列印託運單，或至智能櫃台(黑貓寄取站) 、
+                                                    ibon(7-ELEVEN)、OKGO(OK超商)機台列印託運單，詳細可參考<a
+                                                        href="/consign/info.aspx">icat網路宅急便</a>服務說明。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">如何寄送高爾夫球具？</p>
+                                                <p>請在打球日前兩天的下午17點前電話通知黑貓宅急便到府收件(或親自前往黑貓寄取站寄件(7-ELEVEN等代收店恕不受理)，黑貓宅急便會在您打球前一天將球具送達高爾夫球場，由球場協助代收，請您於打球當日再至球場櫃台領取即可。
+                                                </p>
+                                                <p>若打球日為週日，請將『希望配達日』提前至週六，並於兩天前（週四以前）寄出;
+                                                    若打球日兩天前遇週日，請於三天前寄出。例:打球日為下週一，則需於本週五寄出。相關說明請參考<a
+                                                        href="/product/golf.aspx">高爾夫宅急便</a>服務說明。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">經濟宅急便包裝盒可重複使用嗎？</p>
+                                                <p>因經濟宅急便使用的材質為環保再生紙及破壞膠黏貼包裝，經一次使用後的包裝盒比較無法正常及完整的包裹寄件商品，為保護包裹寄送的安全性故無法提供包裝盒重覆利用。相關說明請參考<a
+                                                        href="/product/economy.aspx">經濟宅急便</a>服務說明。</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    配送問題
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="thinborder-box active">
+                                        <ul class="qa-list">
+                                            <li>
+                                                <div>
+                                                    <p class="qa_tit">可將包裹送到我家附近的連鎖超商嗎?</p>
+                                                    <p>歡迎使用<a
+                                                            href="/product/cvs.aspx">宅轉店</a>取件服務，可依您方便時間，至7-ELEVEN門市領取包裹。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">我的包裹什麼時段會送達呢？</p>
+                                                    <p>詳細內容可參考<a href="/inquire/timesheet1.aspx">送達時間服務說明</a>頁面。</p>
+                                                </div>
+                                            </li>
+                                            <!-- <li>
+									<div class="">
+										<p class="qa_tit">如果我不是在同縣市互寄，可當日送達嗎？</p>
+										<p>目前僅服務基隆市、台北市、新北市、桃園市四地提供【當日宅急便】的服務，部分區域暫無提供服務。週一~週六上午11點前寄件，當日15點~18點會送達。若是在前一日17點至當日上午11點，指定使用【當日宅急便】服務，物品皆可於當日15點-18點送達，詳細內容可參考<a href="/product/day.aspx">當日宅急便</a>服務說明頁面。</p>
+									</div>
+								</li> -->
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">若白天不在家，可使用何服務才能收到包裹呢？</p>
+                                                    <p>歡迎使用請<a href="/product/cvs.aspx">宅轉店</a>或<a
+                                                            href="/inquire/foothold.aspx">黑貓寄取站</a>取件服務，可依您方便時間，至7-ELEVEN門市或黑貓寄取站領取包裹。
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">如果家裡都沒有人在，你們還會再配送一次嗎？</p>
+                                                    <p>若收件人不在家，我們會再次與收件人聯絡，確認配送時間 。仍無法聯絡上，將與寄件人聯絡處理</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">若要寄到學校去，是不是可不經由收發室代收呢？</p>
+                                                    <p>由於各校的配送合作模式不同，若貴校校區可讓宅配業者進入直接配送，黑貓宅急便服務人員會在進入校區後，以電話聯繫您至託運單上指定地址領取包裹。反之，若貴校尚未開放讓宅配業者進入校區宅配，黑貓宅急便服務人員將會把包裹放置在指定收發單位，並通知您直接過去領取。在此提醒您，務必請寄件人在託運單上詳細填寫您的學校名稱、科系(或處室、宿舍名稱)、您的大名及聯絡電話，以利配送作業進行。　
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    運費問題
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="thinborder-box active">
+
+                                        <ul class="qa-list">
+                                            <li>
+                                                <div>
+                                                    <p class="qa_tit">「跨縣市」不管送到哪都是一樣價錢嗎？</p>
+                                                    <p>跨縣市(離島除外)不分重量 (20KG內)及距離，依貨物尺寸統一計價，相關說明請參考<a
+                                                            href="/inquire/timesheet3.aspx">運費說明</a>頁面。</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">到府收件會不會額外收費？</p>
+                                                    <p>到府收件不會額外收取費用，請您放心。</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">你們的運費可不可以由收件人給付？</p>
+                                                    <p>可以，宅急便提供「到付宅急便」的服務，運費由收件人付款，此服務僅限到府收件、到黑貓寄取站和到7-ELEVEN寄件及網路預約包裹使用喔!
+                                                        相關說明請參考<a href="/product/freight.aspx">到付宅急便</a>商品說明頁面。</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="">
+                                                    <p class="qa_tit">有提供貨到付款或貨到刷卡服務嗎？</p>
+                                                    <p>黑貓宅急便目前只提供運費由收件人付款的服務(即到付宅急便服務)不包括商品費用的付款服務，有關商品費用的付款問題請洽詢<a
+                                                            href="https://www.ccat.com.tw/Home/Index"
+                                                            target="_blank">宅急便客樂得</a>公司</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    包裹查詢問題
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="qa-list">
+                                        <li>
+                                            <div>
+                                                <p class="qa_tit">如何查詢我的包裹到了沒？</p>
+                                                <p>輸入<a
+                                                        href="/inquire/trace.aspx">包裹查詢</a>號碼(右上角的10碼阿拉伯數字)即可查詢。也可以撥打客服專線412-8888(手機直撥請加02)或是使用<a
+                                                        href="https://neko.t-cat.com.tw/webchat/index.html"
+                                                        target="_blank">智能客服</a>，服務人員將立刻為您查詢。(客服服務時間：早上8點~晚上19點)</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">為什麼我輸入了包裹查詢號碼，卻沒有我的資料？</p>
+                                                <p>可能的原因有很多，例如：號碼錯誤、資料傳送處理中…等原因。如果包裹系統未能顯示您的資料，也可以來電或來信，由黑貓宅急便服務人員為您查詢。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">我不知道託運單號怎麼辦？</p>
+                                                <p>因須使用包裹查詢號碼查詢，所以託運單收執聯的保存非常的重要。如果您是收件人，可以向寄件人詢問正確的號碼以利查詢。</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="">
+                                                <p class="qa_tit">有什麼辦法可以主動得知包裹是否已送達到收件人手中？</p>
+                                                <p>歡迎登入/註冊會員使用icat網路宅急便預約寄件，享有「配達完簡訊通知」免費服務！詳細內容您可參<a
+                                                        href="/consign/info.aspx">icat網路宅急便</a>及<a
+                                                        href="/consign/notice.aspx">配達完通知服務</a>說明頁面。</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                    aria-controls="flush-collapseFive">
+                                    網路預約寄件問題
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="qa-list">
+                                        <li>
+                                            <div>
+                                                <p class="qa_tit">如何使用網路預約寄件？有什麼好處？</p>
+                                                <p>只要在官網使用icat網路宅急便或手機APP線上填寫託運單，黑貓宅急便就會在指定日期到府收件，使用<a
+                                                        href="/consign/info.aspx">icat網路宅急便</a>還可以自行列印託運單，不需再逐筆手寫，詳細內容可參考icat網路宅急便服務說明頁面。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <p class="qa_tit">網路預約寄件可以預約當天取件嗎？</p>
+                                                <p>黑貓先生將於您選擇的寄件日，依路線安排聯絡您收件，通常於當日15點~18點到府，請提前準備好包裹。（若選擇黑貓到府且自行列印託運單，請先將託運單列印完成）。
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <p class="qa_tit">想要取消預約或更改資料該怎麼做？</p>
+                                                <p>若需要修改或取消網路預約的資料，可至訂單管理區登入即可修改或取消。若該筆訂單資料顯示「訂單已送出」表示系統以安排黑貓服務人員收件無法線上取消訂單，請提供該筆訂單的訂單編號，聯絡客服中心412-8888(手機直撥請加02)及使用網路客服，由客服人員為您進行修改或取消(客服服務時間：早上8點~晚上19點)
+                                                    詳細使用方式您可參考<a href="/consign/info.aspx">託運單列印</a>服務說明頁面。</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- 內容 end -->
+    </main>
+
+    <!-- order 排序,數字越小越前面(0-5) -->
+    <footer class="mt-auto bg-primary py-5 text-dark text-center">
+        <!-- .container>.row>.col-md-4*3{$} -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-end order-md-3">
+                    <!-- a.btn.btn-outline-light{家具專區} -->
+                    <!-- a.btn.btn-outline-light{優惠券} -->
+                    <a href="" class="btn btn-outline-light">家具專區</a>
+                    <a href="" class="btn btn-outline-light">優惠券</a>
+                    <p class="fs-3">
+                        <span class="me-2 d-none d-md-inline">FOLLOW US</span>
+                        <a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-line"></i></a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 order-md-2 d-none d-md-block">生活家居</div>
+                <div class="col-md-4 text-md-start order-md-1">
+                    <p>隨時歡迎你加入！我們不定期提供卡友優惠價格、生日優惠及各類驚喜贈品！</p>
+                    <p>免費加入企業卡卡友，即享專屬優惠。</p>
+                    <p>
+                        <a href="" class="text-dark text-decoration-none">隱私權政策</a>
+                        <a href="" class="text-dark text-decoration-none">聯絡我們</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="accout" class="form-label">帳號</label>
+                            <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                                placeholder="請輸入電子郵件" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="請輸入密碼" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+
+                        <p class="text-end">
+                            <button type="submit" class="btn btn-primary">
+                                登入
+                            </button>
+                        </p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="class mb-4">
+                您的購物車是空的
+            </div>
+            <div class="row">
+                <div class="col-6"><a href="" class="btn btn-primary w-100">立即結帳</a></div>
+                <div class="col-6"><a href="" class="btn btn-primary w-100">前往選購</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>

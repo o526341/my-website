@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D家具展示</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        main {
+            padding-top: 100px;
+        }
+
+        .bg-primary {
+            background-color: lightblue !important;
+        }
+
+        .border-primary {
+            background: lightblue !important;
+        }
+
+        .img-wrap:hover .img-overlay {
+            opacity: .5;
+            /* transform: all .5s; */
+        }
+
+        .img-overlay {
+            background: #000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+    <main class="flex-shrink-0">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm mb-5">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">3D家具展示</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- start / left / 左 -->
+                        <!-- end / right / 右 -->
+                        <!-- m-auto margin:auto 左右自動調整 -->
+                        <!-- ms-auto margin:left:auto 左右自動調整 -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./store.html">門市資訊</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    產品分類
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./product-list.html">櫃子</a></li>
+                                    <li><a class="dropdown-item" href="./product-list.html">椅子</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">常見問題</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">關於我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="#offcanvasExample">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+
+                        </div>
+                        <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 內容 start -->
+        <!-- form#loginForm -->
+        <!-- 1. require 必填 -->
+        <!-- 2. novalidate 移除HTML5驗證 -->
+        <!-- 3. needs-validation 驗證區塊的class名稱 -->
+        <!-- 4. 加掛驗證js(建議獨立一個js檔案) -->
+        <!-- bs5-form-submit -->
+        <!-- p.text-end -->
+        <!-- <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+            <div class="mb-3">
+                <label for="accout" class="form-label">帳號</label>
+                <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                    placeholder="請輸入電子郵件" required />
+                <div class="invalid-feedback">
+                    此為必填項目
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="請輸入密碼"
+                    required />
+                <div class="invalid-feedback">
+                    此為必填項目
+                </div>
+            </div>
+
+            <p class="text-end">
+                <button type="submit" class="btn btn-primary">
+                    登入
+                </button>
+            </p>
+        </form> -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-5">
+                    <div id="carouselExampleIndicator2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicator2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <!-- active代表作用中/一開始於第一個項目 -->
+                            <div class="carousel-item active">
+                                <img src="./img/輪播1.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/輪播4.jpg" class="w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/輪播3.jpg" class="w-100" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <div class="fs-1">
+        <i class="fa-regular fa-circle-user"></i>
+        <i class="fa-regular fa-house"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-phone"></i>
+        <i class="fa-regular fa-heart"></i>
+    </div> -->
+
+    <!-- 兩欄 start -->
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-3"><img class="w-100" src="img/家具1.jpg" alt=""></div>
+            <div class="col-12 col-md-6 mb-3"><img class="w-100" src="img/家具2.jpg" alt=""></div>
+        </div>
+    </div>
+    <!-- 兩欄 end -->
+
+    <!-- 四欄 start -->
+    <!-- .container>.row>.col-{文字$} -->
+    <div class="container text-center my-5">
+        <div class="row">
+            <h2 class="fw-bold">NEWS<br>最新消息</h2>
+            <p class="fw-bold fs-4">獲取最新優惠及活動</p>
+            <div class="col-md-3 mb-4"><img class="w-100" src="img/廣告1.webp" alt="">以俐落線條搭配溫潤胡桃木紋</div>
+            <div class="col-md-3 mb-4"><img class="w-100" src="img/廣告2.webp" alt="">展現斯堪地那維亞風格的當代精神</div>
+            <div class="col-md-3 mb-4"><img class="w-100" src="img/廣告3.jpg" alt="">輕鬆為家增添秋日氛圍​</div>
+            <div class="col-md-3 mb-4"><img class="w-100" src="img/廣告4.jpg" alt="">手工裝飾和餐桌佈置靈感</div>
+        </div>
+    </div>
+    <!-- 四欄 end -->
+
+    <!-- 三欄 start -->
+    <div class="bg-primary py-5 mb-5 text-center text-white fw-bold fs-4">
+        <div class="container text-center">
+            <div class="row">
+                <h2 class="fw-bold">PRODUCTS<br>商品情報</h2>
+                <p class="fw-bold fs-4">探索家具</p>
+                <div class="col-md-4">
+                    <a href="./product-list.html" class="text-white text-decoration-none">
+                        <!-- .img-wrap.position-relative -->
+                        <div class="img-wrap position-relative">
+                            <img src="./img/sofa1.webp" alt="" class="w-100">
+                            <div class="img-overlay position-absolute"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./product-list.html"><img src="./img/櫃子1.webp" alt="" class="w-100 mb-3"></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="./product-list.html"><img src="./img/櫃子2.webp" alt="" class="w-100 mb-3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 三欄 end -->
+    <!-- .container>.row>.col-md-6*2{$} -->
+    <div class="container my-5 text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row bg-primary g-0">
+                    <div class="col-12 col-lg-6"><img src="img/家具3.webp" alt="" class="w-100"></div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="p-3">
+                            <h2>BRAND SPIRIT<br>企業精神</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row bg-primary g-0">
+                    <div class="col-12 col-lg-6"><img src="img/家具3.webp" alt="" class="w-100"></div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="p-3">
+                            <h2>BRAND SPIRIT<br>企業精神</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1.容器>2.列>3.欄.offset偏移>4.超連結>5.圖 -->
+    <!-- .container>.row>.col-12.col-md-6.offset-md-3>a>img.w-100 -->
+    <!-- <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <a href=""><img src="./img/辦公.webp" alt="" class="w-100"></a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- text-start  / text-align:left   文字置左 -->
+    <!-- text-center / text-align:center 文字置中  -->
+    <!-- text-end    / text-align:right  文字置右 -->
+
+    <!-- d-block  / display: block  顯示:塊級 區塊層級元素 -->
+    <!-- d-inline / display: inline 顯示:行內 內聯元素 -->
+    <!-- d-flex   / display:flex    顯示:flex -->
+    <!-- d-none   / display: none   顯示:無 -->
+    <!-- d-block  / display: block  顯示:區塊層級元素 -->
+    <!-- d-inline / display: inline 顯示:行內元素 -->
+
+    <!-- btn   按鈕共用樣式 -->
+    <!-- btn-primary 實心按鈕 -->
+    <!-- btn-outline-light 按鈕 -->
+
+    <!-- order 排序,數字越小越前面(0-5) -->
+    <footer class="mt-auto bg-primary py-5 text-dark text-center">
+        <!-- .container>.row>.col-md-4*3{$} -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-end order-md-3">
+                    <!-- a.btn.btn-outline-light{家具專區} -->
+                    <!-- a.btn.btn-outline-light{優惠券} -->
+                    <a href="" class="btn btn-outline-light">家具專區</a>
+                    <a href="" class="btn btn-outline-light">優惠券</a>
+                    <p class="fs-3">
+                        <span class="me-2 d-none d-md-inline">FOLLOW US</span>
+                        <a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-line"></i></a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 order-md-2 d-none d-md-block">生活家居</div>
+                <div class="col-md-4 text-md-start order-md-1">
+                    <p>隨時歡迎你加入！我們不定期提供卡友優惠價格、生日優惠及各類驚喜贈品！</p>
+                    <p>免費加入企業卡卡友，即享專屬優惠。</p>
+                    <p>
+                        <a href="" class="text-dark text-decoration-none">隱私權政策</a>
+                        <a href="" class="text-dark text-decoration-none">聯絡我們</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="accout" class="form-label">帳號</label>
+                            <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                                placeholder="請輸入電子郵件" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="請輸入密碼" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+
+                        <p class="text-end">
+                            <button type="submit" class="btn btn-primary">
+                                登入
+                            </button>
+                        </p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="class mb-4">
+                您的購物車是空的
+            </div>
+            <div class="row">
+                <div class="col-6"><a href="" class="btn btn-primary w-100">立即結帳</a></div>
+                <div class="col-6"><a href="" class="btn btn-primary w-100">前往選購</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>

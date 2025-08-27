@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- bootstrap icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        main {
+            padding-top: 50px;
+        }
+
+        .bg-primary {
+            background-color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body class="h-100 d-flex flex-column">
+
+    <main class="flex-shrink-0">
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-sm">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">3D家具展示</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- start / left / 左 -->
+                        <!-- end / right / 右 -->
+                        <!-- m-auto margin:auto 左右自動調整 -->
+                        <!-- ms-auto margin:left:auto 左右自動調整 -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./store.html">門市資訊</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    產品分類
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./product-list.html">櫃子</a></li>
+                                    <li><a class="dropdown-item" href="./product-list.html">椅子</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faq.html">常見問題</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">關於我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                        <div class="">
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                            <button type="button" class="btn btn-info" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="#offcanvasExample">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+
+                        </div>
+                        <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 內容 start -->
+        <!-- form#loginForm -->
+        <!-- 1. require 必填 -->
+        <!-- 2. novalidate 移除HTML5驗證 -->
+        <!-- 3. needs-validation 驗證區塊的class名稱 -->
+        <!-- 4. 加掛驗證js(建議獨立一個js檔案) -->
+        <!-- bs5-form-submit -->
+        <!-- p.text-end -->
+        <!-- <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+            <div class="mb-3">
+                <label for="accout" class="form-label">帳號</label>
+                <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                    placeholder="請輸入電子郵件" required />
+                <div class="invalid-feedback">
+                    此為必填項目
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">密碼</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="請輸入密碼"
+                    required />
+                <div class="invalid-feedback">
+                    此為必填項目
+                </div>
+            </div>
+
+            <p class="text-end">
+                <button type="submit" class="btn btn-primary">
+                    登入
+                </button>
+            </p>
+        </form> -->
+    </main>
+    <!-- 1.容器>2.列>3.欄圖+欄字 -->
+    <!-- .container>.row>.col-12.col-md-6{圖}+.col-12.col-md-6{字} -->
+    <nav aria-label="breadcrumb" class="p-2 shadow-sm">
+        <ol class="breadcrumb m-0">
+            <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">關於我們</li>
+        </ol>
+    </nav>
+    <div class="container text-center text-white">
+        <div class="row bg-primary g-0 mt-3">
+            <div class="col-12 col-md-6"><img src="img/家具1.webp" alt="" class="w-100"></div>
+            <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                <div class="px-3">
+                    <h2>企業精神</h2>
+                    <p>為世界各地的顧客提供設計出色、價格可負擔得起的產品。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-secondary g-0">
+            <div class="col-12 col-md-6 order-md-1"><img src="img/家具2.jpg" alt="" class="w-100"></div>
+            <div class="col-12 col-md-6 order-md-0  d-flex justify-content-center align-items-center">
+                <div class="px-3">
+                    <h2>品牌故事</h2>
+                    <p>在1940年代由一位富有創業精神的男孩在瑞典小鎮阿姆胡特創立，他希望改善各地民眾的生活。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- .container>.row>.col-12.col-md-6*2{影片} -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="842" height="482" src="https://www.youtube.com/embed/3ORpXwMzbFQ"
+                        title="北歐復古家具｜精品級入手不負擔｜全室家具一站買齊｜好評熱銷破1.1億元" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe width="842" height="482" src="https://www.youtube.com/embed/UT1s4g38IhI"
+                        title="製材所︱原木家具專賣 # 原木裝潢" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14730.062346675284!2d120.26996580538!3d22.63455758545519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e046ceed067c9%3A0x40a7e177be37575f!2z5aO95bGx5YuV54mp5ZyS!5e0!3m2!1szh-TW!2stw!4v1756108250318!5m2!1szh-TW!2stw"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-auto bg-primary py-5 text-dark text-center">
+        <!-- .container>.row>.col-md-4*3{$} -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-end order-md-3">
+                    <!-- a.btn.btn-outline-light{家具專區} -->
+                    <!-- a.btn.btn-outline-light{優惠券} -->
+                    <a href="" class="btn btn-outline-light">家具專區</a>
+                    <a href="" class="btn btn-outline-light">優惠券</a>
+                    <p class="fs-3">
+                        <span class="me-2 d-none d-md-inline">FOLLOW US</span>
+                        <a class="text-dark" href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a class="text-dark" href=""><i class="fa-brands fa-line"></i></a>
+                    </p>
+
+                </div>
+                <div class="col-md-4 order-md-2 d-none d-md-block">生活家居</div>
+                <div class="col-md-4 text-md-start order-md-1">
+                    <p>隨時歡迎你加入！我們不定期提供卡友優惠價格、生日優惠及各類驚喜贈品！</p>
+                    <p>免費加入企業卡卡友，即享專屬優惠。</p>
+                    <p>
+                        <a href="" class="text-dark text-decoration-none">隱私權政策</a>
+                        <a href="" class="text-dark text-decoration-none">聯絡我們</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="loginForm" class="needs-validation" method="post" novalidate>
+                        <div class="mb-3">
+                            <label for="accout" class="form-label">帳號</label>
+                            <input type="text" name="accout" id="accout" class="form-control" aria-describedby="helpId"
+                                placeholder="請輸入電子郵件" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="請輸入密碼" required />
+                            <div class="invalid-feedback">
+                                此為必填項目
+                            </div>
+                        </div>
+
+                        <p class="text-end">
+                            <button type="submit" class="btn btn-primary">
+                                登入
+                            </button>
+                        </p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="class mb-4">
+                您的購物車是空的
+            </div>
+            <div class="row">
+                <div class="col-6"><a href="" class="btn btn-primary w-100">立即結帳</a></div>
+                <div class="col-6"><a href="" class="btn btn-primary w-100">前往選購</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
+</body>
+
+</html>
